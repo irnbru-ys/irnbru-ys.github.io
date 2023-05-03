@@ -1,0 +1,484 @@
+@media (min-width: 1200px)
+    .footer
+        &__visible
+            display: none
+    
+@media (max-width: 1200px)
+    .menu
+        &__item:not(:last-child)
+            padding-right: 20px
+        &__link
+            font-size: 14px    
+
+    .promo 
+        &__header
+            font-size: 50px     
+
+    .advantages
+        &__items-wrapper
+            align-items: start
+        &__col    
+            &:not(:last-child)    
+                margin-bottom: 20px
+            &:nth-child(7)
+                margin-bottom: 0px
+                    
+                
+        &__item-text
+            width: 300px          
+    
+    .mobile
+        &__item
+            width: 300px
+
+
+    .footer
+        
+        &__visible
+            display: none  
+         
+        &__app
+            flex-direction: column
+            justify-content: space-evenly
+            align-content: end
+            width: 27%
+            margin-right: 2%
+        &__items
+
+            &-1
+                width: 87px
+                height: 27px
+                margin: 0    
+            &-2
+                width: 87px
+                height: 27px
+                margin: 0    
+            &-3
+                width: 87px
+                height: 27px
+                margin: 0    
+        &__box
+            width: 45%                
+
+        &__social   
+            width: 27%  
+
+
+@media (max-width: 991px)  
+    .menu
+        padding: 13px 0px    
+
+        &__link
+            font-size: 13px   
+        &__item:not(:last-child)     
+            padding-right: 12px  
+
+    .subheader
+        &__phone
+            font-size: 18px    
+
+        &__text
+            font-size: 12px 
+        &__call
+            font-size: 11px     
+
+        &__btn
+            width: 100%
+            height: 40px
+            font-size: 13px
+
+    .promo 
+        &__header
+            font-size: 40px   
+        &__subheader   
+            font-size: 30px   
+
+    .advantages
+        &__items-wrapper
+            flex-direction: column
+            align-items: center
+                     
+        &__logo
+            top: -5px
+         
+    .mobile
+        &__item 
+            width: 225px
+            &-subtitle   
+                font-size: 18px 
+       
+    .footer
+       
+        &__visible
+            display: none  
+
+
+@media (max-width: 767px)      
+    .menu
+        position: fixed  
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, .8)
+        &__active
+            left: 0
+            transition: .2s all
+        &__item
+            margin: 10px 0
+            padding-right: 0
+            &:not(:last-child)
+                border-right: none
+        &__link
+            font-size: 18px    
+
+    .hamburger   
+        display: block   
+        position: absolute 
+        right: 10px 
+        top: 50%
+        transform: translateY(-50%)
+        width: 30px
+        height: 21px
+        & > span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: $color-white
+            transition: .2s all
+            &:not(:last-child)
+                margin-bottom: 5px
+        &__active
+            & > span
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                    margin-bottom: -2px
+                &:nth-child(2)
+                    display: none 
+                &:nth-child(3)   
+                    transform: translateY(3px) rotate(45deg) 
+                    margin-bottom: -2px   
+    .xs-hidden
+        display: none                
+    .xs-visible
+        display: block
+
+    .subheader
+        padding-top: 8px
+        &__phone
+            display: block
+            color: #ffffff
+            font-size: 18px
+            font-weight: 400
+            text-align: center
+            text-transform: uppercase 
+            padding-bottom: 5px   
+        &__link
+            
+        &__logo
+            padding-top: 25px
+
+        &__btn
+            display: block
+            width: 200px
+            height: 40px
+            background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+            color: #ffffff
+            font-size: 10px
+            font-weight: 400
+            text-align: center
+            text-transform: uppercase
+            margin: 0 auto
+
+    .promo 
+        &__header
+            line-height: 45px  
+
+    .advantages
+        &__col:not(:last-child)
+                margin-bottom: 20px
+           
+           
+
+        &__item-text
+            width: 400px   
+        &__item-title
+            text-align: center         
+
+    .mobile
+        &__item
+            width: 400px
+            &--4 
+                margin-bottom: 16px
+            &--5 
+                margin-bottom: 16px
+            &--6     
+                margin-bottom: 16px  
+            &-subtitle
+                font-size: 22px    
+
+    .car
+        min-height: 790px
+        padding-bottom: 25px
+        &__image
+            top: 65%
+            width: 523px
+            height: 332px
+        &__subtitle 
+            margin-bottom: 360px
+  
+    .require
+        padding-top: 25px
+
+    .footer
+        &__visible
+            display: none 
+
+        &__wrapper
+            display: flex
+            flex-direction: column
+            align-items: center
+            & > div
+                margin-bottom: 20px
+        &__box
+            width: 70%   
+            justify-content: center 
+
+        &__social
+            width: 100%
+            justify-content: center
+
+        &__app
+            flex-direction: row
+            justify-content: center
+            width: 100%
+            margin: 0
+        &__items-1, &__items-2, &__items-3     
+            &:not(:last-child)
+                margin-right: 10px
+                
+
+@media (max-width: 575px) 
+    nav
+        height: 33px   
+
+    .menu
+        width: 85%
+        &__link
+            display: block
+            font-size: 14px
+        &__active
+            align-items: flex-start    
+
+        &__item
+            width: 100%
+            text-align: center
+            padding: 4px
+
+
+
+    .subheader
+        height: 60px
+        padding-top: 0px
+        margin-top: 33px
+        &__logo
+            padding-top: 21px
+        &__phone
+            color: #ffffff
+            font-size: 12px
+            font-weight: 400
+            text-align: center
+            text-transform: uppercase
+            padding-top: 0px
+            margin-top: 11px
+        &__btn
+            width: 110px
+            height: 22px
+            background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+            color: #ffffff
+            border: 0
+            font-size: 10px
+            font-weight: 400
+            text-align: center
+            text-transform: uppercase
+            padding: 0
+            margin: 0 auto
+            &:hover, &:active
+                background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+                color: white
+                
+            
+    .promo
+        top: 33px
+        min-height: 400px  
+        padding: 113px 0 35px
+        &__descr
+            display: none     
+        &__header
+            color: #ffffff
+            font-size: 30px
+            font-weight: 700
+            line-height: normal
+            text-align: center
+            text-transform: uppercase
+            margin-bottom: 14px
+        &__subheader
+            font-size: 20px
+            font-weight: 400
+            margin-bottom: 72px
+        &__btn
+            width: 210px
+            height: 50px
+            color: #ffffff
+            font-size: 16px
+            font-weight: 400
+            text-align: center
+            text-transform: uppercase
+            &:hover, &:active
+                background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+                color: white
+    .advantages  
+        padding: 22px 0 0 0
+        &__logo
+            top: 7px
+            width: 100px
+            height: 100px
+            
+        &__item-title
+            font-size: 16px
+            font-weight: 400
+            text-align: left
+        &__subtitle-paragraph
+            font-size: 15px
+            font-weight: 300
+        &__item-text
+            width: 100%
+            margin: 0
+            margin-top: 26px
+            
+    .mobile
+        padding-top: 72px 
+        padding-bottom: 43px 
+        &__item
+            width: 100%
+            &-subtitle
+                color: #ffffff
+                font-size: 18px
+                font-weight: 400
+                text-align: center
+                text-transform: uppercase
+
+    .car
+        min-height: 390px
+        padding: 25px 0 33px  
+        &__title
+            display: none
+        &__subtitle
+            display: none 
+        &__image
+            top: 45%
+            width: 300px
+            height: 190px   
+        &__descr
+            position: absolute
+            bottom: 10%
+
+        
+    .title
+        &__h2
+            font-size: 15px 
+            line-height: 16px 
+            margin-bottom: 11px
+            &--black
+                font-size: 16px
+        
+    .subtitle
+        &__box 
+            margin-bottom: 15px       
+        
+    .require
+        padding-bottom: 26px
+        &__title
+            font-size: 16px
+            font-weight: 400
+        &__list
+            font-size: 14px
+            font-weight: 300
+
+            
+    .worldwide
+
+        & > .container
+            min-height: 360px
+            padding: 25px 0 30px
+        &__title
+            font-size: 16px
+            font-weight: 700
+        &__small
+            &-title
+                font-size: 14px
+                font-weight: 400    
+    
+    
+    .footer
+        padding-top: 25px
+        min-height: 245px
+        border: none
+        &__line
+            margin-bottom: 22px
+        &__social
+            margin-bottom: 20px
+        &__app
+            margin-bottom: 20px
+                
+        
+
+        &__box
+            width: 100%
+            margin-bottom: 20px
+        &__hidden
+            display: none
+        &__visible
+            display: block  
+        &__first
+            &--row
+                margin: 0 auto
+                & > ul
+                    display: flex
+                    justify-content: space-evenly
+                    align-items: center
+                    padding: 0
+                    font-size: 14px
+                    font-weight: 300
+        &__second
+            
+            &--row
+                
+                padding: 0 10%
+                & > ul
+                    display: flex
+                    justify-content: space-evenly
+                    flex-wrap: wrap
+                    padding: 0 
+                    font-size: 11px
+                    font-weight: 300
+
+                    & > li
+                        margin-right: 30px
+                        // :not(:last-child)
+                        //     margin-right: 30px
+                    // & > li:nth-child(2)
+                    //         margin-right: 0 
+
+
+        &__third
+            &--row
+                
+                & > ul
+                    padding: 0   
+                    margin: 0 auto             
+
